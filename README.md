@@ -3,26 +3,13 @@
 # 목차
 - [타이어 수명 예측 어플리케이션](#타이어-수명-예측-어플리케이션)
 - [목차](#목차)
-- [일정](#일정)
-- [진행상황](#진행상황)
 - [Weight File](#weight-file)
   - [양호준](#양호준)
   - [이문형](#이문형)
   - [정회준](#정회준)
   - [이석채](#이석채)
-- [학습 (165.246.44.72에서 hojun_pytorchv2 도커 컨테이너로 진행)](#학습-1652464472에서-hojun_pytorchv2-도커-컨테이너로-진행)
+- [학습 (165.246.44.72에서 hojun\_pytorchv2 도커 컨테이너로 진행)](#학습-1652464472에서-hojun_pytorchv2-도커-컨테이너로-진행)
 - [실행파일](#실행파일)
-
-# 일정
-- 3월 1일까지  
-  - [x] 인공지능 모델 모바일 어플리케이션 탑재
-- 5월 27일까지
-  - [ ] 타이어 세그멘테이션 및 Binearization (양호준, 이석채)
-  - [ ] 타이어 깊이 추청 (이문형, 정회준)
-
-# 진행상황
-
-본인 이름 아래에 자기 계획 정리해두고 진행사항 **ipynb 파일로 정리**해서 남길 것 (전처리 작업, 혹은 계획사항 내지 진행사항 같은것 모두가 보기 쉽게 하여 협업하기 위함임)
 
 # Weight File
 easy_data: 연구실에서 직접 촬영한 타이어 데이터로 학습한 것
@@ -38,6 +25,12 @@ seg_data: 직접 타이어만 마스킹해서 배경은 검은색으로 설정�
 [mobilenet_deeplabv3](https://drive.google.com/file/d/1fECgY0-SjTXQUzhN0jwG7ZdhqB7EBHOX/view?usp=sharing)
 
 [resnet18_pruned](https://drive.google.com/file/d/1RfCOc6ZanYfuTgEXcaE0eHXPAy14SEu8/view?usp=sharing)
+
+- 2023-03-29 가중치 파일: 안드로이드 버젼으로 변경한 파일임 (pytorch: 1.13.1 / torchvision: 1.14.1)
+[230329_mobilenet_deeplabv3.ptl](https://drive.google.com/file/d/1CMo3PL0zGBLs8LDPTEpEwo67_P2kefKK/view?usp=share_link)
+
+[230329_resnet18_pruned](https://drive.google.com/file/d/1wlicveGexKWNTVSyvPLc1mRiUlbrNB5R/view?usp=share_link)
+
 
 ## 양호준
 - [x] Kotlin 안드로이드 개발을 위한 문법 복습  

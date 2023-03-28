@@ -60,8 +60,9 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
     implementation 'com.squareup.retrofit2:retrofit:2.6.0'
     implementation 'com.github.gayanvoice:android-animations-kotlin:1.0.1'      // Button Animation
-    implementation 'org.pytorch:pytorch_android_lite:1.10.0'     // Pytorch Android API
-    implementation 'org.pytorch:pytorch_android_torchvision:1.9.0'
+//    implementation 'org.pytorch:pytorch_android_lite:1.10.0'     // Pytorch Android API
+    implementation 'org.pytorch:pytorch_android_lite:1.13.1'     // Pytorch Android API
+    implementation 'org.pytorch:pytorch_android_torchvision_lite:1.10.0'
 //    implementation 'org.pytorch:pytorch_android_torchvision_lite:1.10.0'
     implementation 'com.google.android.datatransport:transport-runtime:3.0.1'
 

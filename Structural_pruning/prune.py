@@ -1,6 +1,6 @@
 import torch
 import torch_pruning as tp
-import pytorch_model_summary as pms
+# import pytorch_model_summary as pms
 import torchvision.models as models
 import torch.nn as nn
 from torch.utils.mobile_optimizer import optimize_for_mobile

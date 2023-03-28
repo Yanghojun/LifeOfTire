@@ -97,7 +97,7 @@ class SegmentationFragment : Fragment() {
         // 가중치 파일 Load
         // DeeplabV3
 //        val module = LiteModuleLoader.load(assetFilePath(requireActivity(), "deeplabv3_scripted_optimized.ptl"))
-        val module = LiteModuleLoader.load(assetFilePath(requireActivity(), "220905_mobilenetv3_deeplabv3.ptl"))     // 220905에 mobilenet 기반으로 segmentation
+        val module = LiteModuleLoader.load(assetFilePath(requireActivity(), "230329_mobilenet_deeplabv3.ptl"))
 
         val seg_inputTensor = TensorImageUtils.bitmapToFloat32Tensor(
             bitmap,
@@ -176,10 +176,11 @@ class SegmentationFragment : Fragment() {
         showProgress(true)
             thread(start = true){
 //                val module = LiteModuleLoader.load(assetFilePath(requireActivity(), "prune_model.ptl"))
-//                val module = Module.load(assetFilePath(requireActivity(), "reres.pt"))
+//                val module = Module.load(assetFilePath(requireActivity(), "80.pt"))
                 // efficientNet
 //                val module = LiteModuleLoader.load(assetFilePath(requireActivity(), "Efficientnet_scripted_optimized.ptl"))
-                val module = LiteModuleLoader.load(assetFilePath(requireActivity(), "resnet18_100epoch_v2.ptl"))
+//                val module = LiteModuleLoader.load(assetFilePath(requireActivity(), "resnet18_100epoch_v2.ptl"))
+                val module = LiteModuleLoader.load(assetFilePath(requireActivity(), "230329_resnet18_pruned.ptl"))
                 val startTime = Date().time
 
                  val outTensors = module.forward(IValue.from(reg_inputTensor))        // Efficientnet은 mean(0, 0, 0) std(1, 1, 1)로 학습했었나보네

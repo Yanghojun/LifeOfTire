@@ -260,7 +260,7 @@ def main():
     model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_mobilenet_v3_large')
     # model.load_state_dict(torch.load('./latest_deeplabv3plus_mobilenet_voc_os16.pth')['model_state'])
     # model.load_state_dict(torch.load('./deeplab_resnet50_final.pth')['model_state'])
-    model.load_state_dict(torch.load('./checkpoints/220905_experiment_mobilenet_deeplabv3.pth')['model_state'])
+    model.load_state_dict(torch.load('./checkpoints/220906_ex2_mobilenet_deeplabv3.pth')['model_state'])
     model.eval()
 
     # Deeplabv3 repo에서 3개 ptl 파일 추출하느 코드

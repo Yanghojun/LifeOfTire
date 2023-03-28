@@ -15,7 +15,7 @@
 .externalNativeBuild
 .cxx
 local.properties
-*.ptl
+# *.ptl
 *.pt
 wandb
 .vscode
@@ -25,7 +25,7 @@ __pycache__
 DeepLabV3Plus-Pytorch/**/*.jpg
 DeepLabV3Plus-Pytorch/**/*.png
 DeepLabV3Plus-Pytorch/**/*.pt
-DeepLabV3Plus-Pytorch/**/*.ptl
+# DeepLabV3Plus-Pytorch/**/*.ptl
 DeepLabV3Plus-Pytorch/**/*.pth
 DeepLabV3Plus-Pytorch/datasets/data
 DeepLabV3Plus-Pytorch/VOCdevkit
